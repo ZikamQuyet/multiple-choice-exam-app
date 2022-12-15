@@ -3,6 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./styles/index.scss";
 // import { ThemeProvider } from "styled-components";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter } from "react-router-dom";
 import { GlobalStyles } from "./styles/GlobalStyles";
 import reportWebVitals from "./reportWebVitals";
@@ -15,6 +17,7 @@ root.render(
     <BrowserRouter>
       <GlobalStyles></GlobalStyles>
       <App />
+      <ToastContainer />
     </BrowserRouter>
   </React.StrictMode>
 );
